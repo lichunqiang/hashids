@@ -15,7 +15,7 @@
         "email": "light-li@hotmail.com"
       }
     ],
-    "autload": {
+    "autoload": {
       "psr-4": {
         "light\\hashids\\": "src/"
       }
