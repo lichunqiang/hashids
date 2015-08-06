@@ -2,11 +2,10 @@
     "name": "light/hashids",
     "description": "an wrapper for hashids library",
     "keywords": ["hashids", "yii2", "hash", "hashid", "ids", "youtube", "biyly", "encrypt", "decrypt"],
-    "type": "library",
     "require": {
       "php": ">=5.4.0",
-      "yiisoft/yii2": "~2.0",
-      "hashids/hashids": "^1.0"
+      "yiisoft/yii2": "2.0.*",
+      "hashids/hashids": "1.0.*"
     },
     "license": "MIT",
     "authors": [
