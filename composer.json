@@ -1,6 +1,6 @@
 {
     "name": "light/hashids",
-    "description": "an wrapper for hashids library",
+    "description": "Hashids for Yii2",
     "keywords": ["hashids", "yii2", "hash", "hashid", "ids", "youtube", "biyly", "encrypt", "decrypt"],
     "require": {
       "php": ">=5.4.0",
