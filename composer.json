@@ -5,7 +5,7 @@
     "require": {
       "php": ">=5.4.0",
       "yiisoft/yii2": "2.0.*",
-      "hashids/hashids": "1.0.*"
+      "hashids/hashids": "1.0.5"
     },
     "license": "MIT",
     "authors": [
