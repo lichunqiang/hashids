@@ -24,9 +24,9 @@ before_script:
     - cp phpunit.xml.dist phpunit.xml
 
 install:
+    - travis_retry phpunit --self-update && phpunit -v
     - travis_retry composer self-update && composer --version
 
 
 script:
-    ./vendor/bin/phpunit -v
-    ./vendor/bin/phpunit --configuration phpunit.xml
+    phpunit --configuration phpunit.xml
