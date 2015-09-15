@@ -5,7 +5,7 @@ use Hashids\Hashids as BaseHashids;
 /**
  * This is a wrapper for Hashids
  * @package light\hashids
- * @version 1.0.0
+ * @version 1.0.2
  * @author lichunqiang<light-li@hotmail.com>
  */
 class Hashids extends Object
