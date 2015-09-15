@@ -47,6 +47,6 @@ class Hashids extends Object
         if (method_exists($this->_hashids, $name)) {
             return call_user_func_array([$this->_hashids, $name], $params);
         }
-        return parent::__call($name, $name);
+        return parent::__call($name, $params);
     }
 }
