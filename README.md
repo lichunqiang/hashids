@@ -25,7 +25,7 @@ In your `main.php` or `web.php` (dependences your yii2 project constructor):
 	'hahsids' => [
 		'class' => 'light\hashids\Hashids',
 		//'salt' => 'your salt',
-		//'minHashLenght' => 5,
+		//'minHashLength' => 5,
 		//'alphabet' => 'abcdefghigk'
 	]
 ]
