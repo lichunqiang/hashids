@@ -52,3 +52,7 @@ $ phpunit
 ## Lisence
 
 ![MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lichunqiang/hashids/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
