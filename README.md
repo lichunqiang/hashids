@@ -2,7 +2,7 @@ Yii2 Hashids
 ------------
 [![Build Status](https://img.shields.io/travis/lichunqiang/hashids.svg?style=flat-square)](http://travis-ci.org/lichunqiang/hashids)
 [![version](https://img.shields.io/packagist/v/light/hashids.svg?style=flat-square)](https://packagist.org/packages/light/hashids)
-[![Download](https://img.shields.io/packagist/dd/light/hashids.svg?style=flat-square)](https://packagist.org/packages/light/hashids)
+[![Download](https://img.shields.io/packagist/dt/light/hashids.svg?style=flat-square)](https://packagist.org/packages/light/hashids)
 [![Issues](https://img.shields.io/github/issues/lichunqiang/hashids.svg?style=flat-square)](https://github.com/lichunqiang/hashids/issues)
 
 
