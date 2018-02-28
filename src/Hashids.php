@@ -12,7 +12,7 @@
 namespace light\hashids;
 
 use Hashids\Hashids as BaseHashids;
-use yii\base\Object;
+use yii\base\BaseObject;
 
 /**
  * This is a wrapper for Hashids.
