@@ -20,13 +20,13 @@ cache:
 
 # script run before anything
 before_script:
-    - composer global require "fxp/composer-asset-plugin:^1.4.1"
-    - composer install
     - cp phpunit.xml.dist phpunit.xml
 
 install:
     - travis_retry composer self-update && composer --version
-
+    - travis_retry composer global require "fxp/composer-asset-plugin:^1.4.1"
+    - export PATH="$HOME/.composer/vendor/bin:$PATH"
+    - travis_retry composer install --prefer-dist --no-interaction
 
 script:
-    - vendor/bin/phpunit --configuration phpunit.xml
+    - phpunit --verbose $PHPUNIT_FLAGS
