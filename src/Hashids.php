@@ -17,12 +17,17 @@ use yii\base\BaseObject;
 /**
  * This is a wrapper for Hashids.
  *
+ * @method string encode(...$params)
+ * @method mixed decode(string $id)
+ * @method string encodeHex(string $id)
+ * @method string decodeHex(string $id)
+ *
  * @version 1.0.2
  *
  * @author lichunqiang<light-li@hotmail.com>
  * @license MIT
  */
-class Hashids extends Object
+class Hashids extends BaseObject
 {
     /**
      * The salt.
@@ -41,14 +46,14 @@ class Hashids extends Object
      *
      * @var string
      */
-    public $alphabet;
+    public $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
     /**
      * The instance of the Hashids.
      *
-     * @var Hashids\Hashids
+     * @var \Hashids\Hashids
      */
     private $_hashids;
-
+    
     /**
      * {@inheritdoc}
      */
@@ -57,6 +62,7 @@ class Hashids extends Object
         parent::init();
         $this->_hashids = new BaseHashids($this->salt, $this->minHashLength, $this->alphabet);
     }
+    
     /**
      * {@inheritdoc}
      */
@@ -65,7 +71,7 @@ class Hashids extends Object
         if (method_exists($this->_hashids, $name)) {
             return call_user_func_array([$this->_hashids, $name], $params);
         }
-
+        
         return parent::__call($name, $params);
     }
 }
